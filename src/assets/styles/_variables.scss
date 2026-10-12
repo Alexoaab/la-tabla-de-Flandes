@@ -1,0 +1,30 @@
+// Colores inspirados en el tablero, el papel y los marcos de una pintura.
+$color-ink: #1b211f;
+$color-paper: #f5f0e6;
+$color-surface: #fffcf6;
+$color-gold: #d4b470;
+$color-accent: #805f22;
+$color-muted: #58615b;
+$color-border: #d9cbb1;
+$color-focus: #9f741c;
+
+// Paleta oscura: conserva el dorado y los bordes de tonos marrones.
+$color-dark-text: #f1eadf;
+$color-dark-page: #171d19;
+$color-dark-surface: #242b25;
+$color-dark-accent: $color-gold;
+$color-dark-muted: #bcc6ba;
+$color-dark-border: #756447;
+$color-dark-focus: #e5c27b;
+
+// Tipografías del sistema: títulos con serif y texto con sans serif.
+$font-family-sans-serif: -apple-system, blinkmacsystemfont, "Segoe UI", sans-serif;
+$font-family-serif: georgia, "Times New Roman", serif;
+$font-size-base: 16px;
+
+// Medidas comunes y puntos de cambio del diseño mobile first.
+$content-max: 90rem;
+$page-gutter: 1.25rem;
+$radius-card: 1rem;
+$breakpoint-tablet: 48rem;
+$breakpoint-desktop: 64rem;

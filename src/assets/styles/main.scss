@@ -1,0 +1,9 @@
+/**
+ * Punto de entrada: este archivo solo carga los parciales.
+ * Se conservan las dependencias y el layout del UOC Boilerplate.
+ */
+
+@use "dependencies";
+@use "themes";
+@use "base";
+@use "layouts/home";

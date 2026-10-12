@@ -1,0 +1,34 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "plugins": ["stylelint-order"],
+  "ignoreFiles": ["dist/**", "node_modules/**"],
+  "defaultSeverity": "error",
+  "reportDescriptionlessDisables": true,
+  "reportInvalidScopeDisables": true,
+  "reportNeedlessDisables": true,
+  "rules": {
+    "selector-class-pattern": null,
+    "scss/selector-class-pattern": [
+      "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*(?:__[a-z][a-z0-9]*(?:-[a-z0-9]+)*)?(?:--[a-z][a-z0-9]*(?:-[a-z0-9]+)*)?$",
+      {
+        "resolveNestedSelectors": true,
+        "message": "Usa BEM: bloque, bloque__elemento o bloque--modificador, en minúsculas."
+      }
+    ],
+    "scss/dollar-variable-pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+    "scss/at-function-pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+    "custom-property-pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+    "selector-max-id": 0,
+    "max-nesting-depth": 2,
+    "declaration-no-important": true,
+    "color-hex-length": "long",
+    "media-feature-range-notation": "prefix",
+    "order/order": [
+      "custom-properties",
+      "dollar-variables",
+      "declarations",
+      "rules",
+      "at-rules"
+    ]
+  }
+}

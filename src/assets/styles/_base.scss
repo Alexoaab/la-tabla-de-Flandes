@@ -1,0 +1,53 @@
+@use "variables" as v;
+@use "functions" as f;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+:where(h1, h2, h3, p, ul, dl, dd) {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
+:focus-visible {
+  outline: f.to-rem(3px) solid var(--color-focus);
+  outline-offset: f.to-rem(4px);
+}
+
+.page {
+  margin: 0;
+  font-family: v.$font-family-sans-serif;
+  font-size: f.to-rem(16px);
+  line-height: 1.65;
+  color: var(--color-text);
+  background-color: var(--color-page);
+  overflow-wrap: break-word;
+}
+
+.skip-link {
+  position: fixed;
+  top: f.to-rem(12px);
+  left: v.$page-gutter;
+  z-index: 10;
+  padding: f.to-rem(12px) f.to-rem(16px);
+  font-weight: 700;
+  color: v.$color-ink;
+  background-color: v.$color-gold;
+  border-radius: f.to-rem(8px);
+  transform: translateY(-180%);
+
+  &:focus {
+    transform: translateY(0);
+  }
+}

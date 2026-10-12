@@ -1,0 +1,26 @@
+@use "variables" as v;
+
+// Las variables CSS permiten cambiar los colores sin volver a compilar Sass.
+:root {
+  --color-text: #{v.$color-ink};
+  --color-page: #{v.$color-paper};
+  --color-surface: #{v.$color-surface};
+  --color-accent: #{v.$color-accent};
+  --color-muted: #{v.$color-muted};
+  --color-border: #{v.$color-border};
+  --color-focus: #{v.$color-focus};
+
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --color-text: #{v.$color-dark-text};
+  --color-page: #{v.$color-dark-page};
+  --color-surface: #{v.$color-dark-surface};
+  --color-accent: #{v.$color-dark-accent};
+  --color-muted: #{v.$color-dark-muted};
+  --color-border: #{v.$color-dark-border};
+  --color-focus: #{v.$color-dark-focus};
+
+  color-scheme: dark;
+}

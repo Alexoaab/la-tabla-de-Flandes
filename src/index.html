@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Una recomendación de La tabla de Flandes, de Arturo Pérez-Reverte: descubre su sinopsis, sus personajes y los motivos para leerla."
+    >
+    <script>
+      // Aplica el tema antes de cargar los estilos para evitar un destello al recargar.
+      (function () {
+        let theme;
+        try {
+          theme = localStorage.getItem("pec1-theme");
+        } catch {
+          // Si no se puede leer la elección, se utiliza la preferencia del sistema.
+        }
+        if (theme !== "light" && theme !== "dark") {
+          theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+    <link rel="stylesheet" href="npm:swiper/swiper.css">
+    <link rel="stylesheet" href="npm:swiper/modules/pagination.css">
+    <link rel="stylesheet" href="npm:swiper/modules/a11y.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+    <title>La tabla de Flandes | Recomendación literaria</title>
+  </head>
+  <body class="page">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="site-header__heading">
+        <a class="site-header__brand" href="#inicio">
+          <i class="site-header__icon fa-solid fa-chess-knight" aria-hidden="true"></i>
+          <span class="site-header__name">La tabla de Flandes</span>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="Cambiar al modo oscuro" hidden>
+          <i class="theme-toggle__icon fa-solid fa-moon" aria-hidden="true"></i>
+          <span class="theme-toggle__label">Modo oscuro</span>
+        </button>
+      </div>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#libro">El libro</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#personajes">Personajes</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#recomendacion">Por qué leerlo</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#autor">El autor</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#fuentes">Fuentes</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page__main" id="contenido" tabindex="-1">
+      <section class="hero" id="inicio" aria-labelledby="inicio-titulo">
+        <p class="hero__eyebrow">Una novela de Arturo Pérez-Reverte</p>
+        <h1 class="hero__title" id="inicio-titulo">La tabla de Flandes</h1>
+        <p class="hero__description">
+          Un cuadro, una partida de ajedrez y un misterio que conecta el pasado
+          con el presente. Cada detalle puede ser una pista.
+        </p>
+        <a class="button button--primary" href="#libro">Descubrir el libro</a>
+      </section>
+
+      <section class="book-section" id="libro" aria-labelledby="libro-titulo">
+        <h2 class="book-section__title" id="libro-titulo">El libro</h2>
+        <dl class="book-facts">
+          <div class="book-facts__item">
+            <dt class="book-facts__label">Título</dt>
+            <dd class="book-facts__value">La tabla de Flandes</dd>
+          </div>
+          <div class="book-facts__item">
+            <dt class="book-facts__label">Autor</dt>
+            <dd class="book-facts__value">Arturo Pérez-Reverte</dd>
+          </div>
+          <div class="book-facts__item">
+            <dt class="book-facts__label">Género</dt>
+            <dd class="book-facts__value">Intriga y misterio</dd>
+          </div>
+        </dl>
+        <h3 class="book-section__subtitle">Sinopsis</h3>
+        <p class="book-section__text">
+          Una pintura flamenca esconde un enigma relacionado con una partida de
+          ajedrez. Una restauradora, un anticuario y un ajedrecista intentan
+          interpretarlo. La investigación de aquel secreto antiguo acaba
+          involucrándolos en un misterio del presente.
+        </p>
+      </section>
+
+      <section class="characters" id="personajes" aria-labelledby="personajes-titulo">
+        <h2 class="characters__title" id="personajes-titulo">Personajes principales</h2>
+        <div class="characters__grid">
+          <article class="character-card">
+            <i class="character-card__icon fa-solid fa-paintbrush" aria-hidden="true"></i>
+            <h3 class="character-card__name">Julia</h3>
+            <p class="character-card__role">La restauradora</p>
+            <p class="character-card__description">
+              Su trabajo sobre una pintura flamenca la sitúa en el inicio de la investigación.
+            </p>
+          </article>
+          <article class="character-card">
+            <i class="character-card__icon fa-solid fa-landmark" aria-hidden="true"></i>
+            <h3 class="character-card__name">César</h3>
+            <p class="character-card__role">El anticuario</p>
+            <p class="character-card__description">
+              Aporta su conocimiento del mundo del arte a la búsqueda de respuestas.
+            </p>
+          </article>
+          <article class="character-card">
+            <i class="character-card__icon fa-solid fa-chess-knight" aria-hidden="true"></i>
+            <h3 class="character-card__name">Muñoz</h3>
+            <p class="character-card__role">El ajedrecista</p>
+            <p class="character-card__description">
+              Examina la partida representada en el cuadro para ayudar a interpretar el enigma.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="recommendation" id="recomendacion" aria-labelledby="recomendacion-titulo">
+        <h2 class="recommendation__title" id="recomendacion-titulo">Por qué leerlo</h2>
+        <p class="recommendation__intro">
+          Una propuesta para quienes disfrutan de las novelas de intriga y de las historias
+          que invitan a buscar conexiones entre sus pistas.
+        </p>
+        <div class="recommendation__grid">
+          <article class="reason-card">
+            <i class="reason-card__icon fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <h3 class="reason-card__title">El placer de investigar</h3>
+            <p class="reason-card__text">
+              El misterio invita a formular hipótesis y a prestar atención a los detalles.
+            </p>
+          </article>
+          <article class="reason-card">
+            <i class="reason-card__icon fa-solid fa-chess" aria-hidden="true"></i>
+            <h3 class="reason-card__title">Arte y ajedrez</h3>
+            <p class="reason-card__text">
+              La pintura y el tablero forman parte de la intriga y de su manera de contar la historia.
+            </p>
+          </article>
+          <article class="reason-card">
+            <i class="reason-card__icon fa-solid fa-hourglass-half" aria-hidden="true"></i>
+            <h3 class="reason-card__title">Pasado y presente</h3>
+            <p class="reason-card__text">
+              Un secreto antiguo abre una investigación que afecta a los personajes del presente.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="author" id="autor" aria-labelledby="autor-titulo">
+        <h2 class="author__title" id="autor-titulo">
+          <i class="author__icon fa-solid fa-pen-nib" aria-hidden="true"></i>El autor
+        </h2>
+        <p class="author__text">
+          Arturo Pérez-Reverte nació en Cartagena en 1951. Antes de dedicarse a la
+          literatura, trabajó como reportero de guerra. La tabla de Flandes permite
+          acercarse a su narrativa a través del arte, la investigación y el misterio.
+        </p>
+
+        <section class="book-carousel" aria-labelledby="otras-obras-titulo">
+          <h3 class="book-carousel__title" id="otras-obras-titulo">Otras obras del autor</h3>
+          <p class="book-carousel__intro">Más lecturas para descubrir su narrativa.</p>
+          <div class="book-carousel__viewport swiper">
+            <div class="book-carousel__track swiper-wrapper">
+              <article class="book-card swiper-slide">
+                <i class="book-card__icon fa-solid fa-book-open" aria-hidden="true"></i>
+                <h4 class="book-card__title">El club Dumas</h4>
+                <p class="book-card__genre">Misterio entre libros</p>
+                <p class="book-card__description">
+                  Una intriga en la que los libros y las referencias literarias van abriendo nuevas pistas.
+                </p>
+                <a
+                  class="book-card__link"
+                  href="https://www.penguinlibros.com/es/novela-negra-misterio-y-thriller/316940-libro-el-club-dumas-edicion-especial-30-aniversario-9788420475417"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver ficha editorial de El club Dumas (se abre en una pestaña nueva)"
+                >Ver ficha editorial</a>
+              </article>
+              <article class="book-card swiper-slide">
+                <i class="book-card__icon fa-solid fa-book-open" aria-hidden="true"></i>
+                <h4 class="book-card__title">El maestro de esgrima</h4>
+                <p class="book-card__genre">Intriga y esgrima</p>
+                <p class="book-card__description">
+                  Un maestro de esgrima se ve envuelto en una trama de ambición y traiciones
+                  en el Madrid de 1868.
+                </p>
+                <a
+                  class="book-card__link"
+                  href="https://www.penguinlibros.com/es/literatura-contemporanea/7421-libro-el-maestro-de-esgrima-9788420472485"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver ficha editorial de El maestro de esgrima (se abre en una pestaña nueva)"
+                >Ver ficha editorial</a>
+              </article>
+              <article class="book-card swiper-slide">
+                <i class="book-card__icon fa-solid fa-book-open" aria-hidden="true"></i>
+                <h4 class="book-card__title">El problema final</h4>
+                <p class="book-card__genre">Intriga y deducción</p>
+                <p class="book-card__description">
+                  Un temporal deja a nueve personas aisladas en una isla. Una muerte misteriosa
+                  convierte a los huéspedes en sospechosos y abre una investigación.
+                </p>
+                <a
+                  class="book-card__link"
+                  href="https://www.penguinlibros.com/es/novela-negra-misterio-y-thriller/328275-libro-el-problema-final-9788420476360"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver ficha editorial de El problema final (se abre en una pestaña nueva)"
+                >Ver ficha editorial</a>
+              </article>
+              <article class="book-card swiper-slide">
+                <i class="book-card__icon fa-solid fa-book-open" aria-hidden="true"></i>
+                <h4 class="book-card__title">La piel del tambor</h4>
+                <p class="book-card__genre">Misterio en Sevilla</p>
+                <p class="book-card__description">
+                  Una iglesia sevillana se convierte en el centro de una investigación
+                  entre intereses, secretos y personajes que buscan respuestas.
+                </p>
+                <a
+                  class="book-card__link"
+                  href="https://www.penguinlibros.com/es/novela-negra-misterio-y-thriller/35022-libro-la-piel-del-tambor-9788484506485"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver ficha editorial de La piel del tambor (se abre en una pestaña nueva)"
+                >Ver ficha editorial</a>
+              </article>
+            </div>
+          </div>
+          <div class="book-carousel__controls" hidden>
+            <button
+              class="book-carousel__button book-carousel__button--previous"
+              type="button"
+              aria-label="Ver obras anteriores"
+            ><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+            <div
+              class="book-carousel__pagination"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+              aria-label="Posición en el carrusel"
+            ></div>
+            <button
+              class="book-carousel__button book-carousel__button--next"
+              type="button"
+              aria-label="Ver obras siguientes"
+            ><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+/**
+ * Estilos de las dependencias instaladas mediante npm.
+ * Font Awesome: iconos. AOS: animaciones.
+ * El CSS nativo de Swiper se carga desde index.html antes de nuestros estilos.
+ */
+
+@use "@fortawesome/fontawesome-free/scss/variables" with (
+  $font-path: "npm:@fortawesome/fontawesome-free/webfonts",
+  $font-display: swap
+);
+@use "@fortawesome/fontawesome-free/scss/fontawesome";
+@use "@fortawesome/fontawesome-free/scss/solid";
+@use "aos/dist/aos.css";
