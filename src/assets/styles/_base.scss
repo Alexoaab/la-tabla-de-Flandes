@@ -38,16 +38,18 @@ a {
 .skip-link {
   position: fixed;
   top: f.to-rem(12px);
-  left: v.$page-gutter;
+  left: 50%;
   z-index: 10;
+  width: max-content;
+  max-width: calc(100% - #{v.$page-gutter * 2});
   padding: f.to-rem(12px) f.to-rem(16px);
   font-weight: 700;
   color: v.$color-ink;
   background-color: v.$color-gold;
   border-radius: f.to-rem(8px);
-  transform: translateY(-180%);
+  transform: translate(-50%, -180%);
 
   &:focus {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
 }
